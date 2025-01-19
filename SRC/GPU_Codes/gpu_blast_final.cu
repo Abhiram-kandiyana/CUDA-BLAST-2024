@@ -1010,8 +1010,8 @@ void process_queries(const std::vector<std::string>& queries,
 int main() {
     try {
         // File paths (adjust these paths as necessary)
-        std::string references_file = "input/lastest_proj3_db.txt";
-        std::string queries_file = "input/800_proj3query_latest.txt";
+        std::string references_file = "../Database/database.txt";
+        std::string queries_file = "../Database/query.txt";
 
         // Load references and queries
         std::vector<std::pair<std::string, std::string>> references = load_references(references_file);
