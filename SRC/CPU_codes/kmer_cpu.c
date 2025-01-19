@@ -199,8 +199,8 @@ void process_queries_sequentially(const std::vector<std::string>& queries,
 
 // Main function
 int main() {
-    std::vector<std::string> reference_sequences = load_sequences_from_file("/content/proj_ref.txt");
-    std::vector<std::string> queries = load_sequences_from_file("/content/proj_query.txt");
+    std::vector<std::string> reference_sequences = load_sequences_from_file("../Database/database.txt");
+    std::vector<std::string> queries = load_sequences_from_file("../Database/query.txt");
 
     if (reference_sequences.empty() || queries.empty()) {
         std::cerr << "Error: No sequences loaded. Please check your input files.\n";
