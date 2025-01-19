@@ -251,9 +251,9 @@ std::vector<std::string> load_sequences_from_file(const std::string& filename) {
 // Main function
 int main() {
    // Load reference sequences from file
-   std::vector<std::string> reference_sequences = load_sequences_from_file("/content/drive/MyDrive/Parallel Systems Project/proj_query.txt");
+   std::vector<std::string> reference_sequences = load_sequences_from_file("../Database/database.txt");
    // Load query sequences from file
-   std::vector<std::string> queries = load_sequences_from_file("/content/drive/MyDrive/Parallel Systems Project/proj_ref.txt");
+   std::vector<std::string> queries = load_sequences_from_file("../Database/query.txt");
 
 
    // Build the hierarchical index
