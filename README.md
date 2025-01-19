@@ -2,7 +2,7 @@
 ### This repository is to compile [NCBI BLAST](https://github.com/TadasBaltrusaitis/OpenFace) with CUDA backend. The repo implements both `k-mer filtering` and `Smith-Waterman Alignment` processes. 
 
 ## **CUDA-BLAST-2024 Installation**
-* Follow the below steps to install the library:
+* Follow the below steps to clone this repo:
 ```
 git clone https://github.com/Abhiram-kandiyana/CUDA-BLAST-2024.git
 cd CUDA-BLAST-2024
@@ -39,12 +39,14 @@ cd SRC
 | Method                | K-mer Length | Duration (in seconds) | Throughput (queries/sec) |
 |-----------------------|--------------|-----------------------|--------------------------|
 | Multithreaded CPU     | 15           | 10.014                | 49.930                   |
-| CUDA-BLAST-2024 (Ours)| 15           | 2.682                 | 186.428                  |
+| CUDA-BLAST-2024 (Ours)| 15           | **2.682**             | **186.428**              |
 | NCBI BLAST            | 15           | 11.000                | 43.478                   |
 | Multithreaded CPU     | 10           | 10.458                | 47.811                   |
-| CUDA-BLAST-2024 (Ours)| 10           | 2.909                 | 171.880                  |
+| CUDA-BLAST-2024 (Ours)| 10           | **2.909**             | **171.880**              |
 | NCBI BLAST            | 10           | 14.000                | 43.478                   |
 
+* The best results for each K-mer length are bolded. 
+* CUDA-BLAST-2024 achieves a **5x** improvment in speed over NCBI-BLAST.
 
 
 
